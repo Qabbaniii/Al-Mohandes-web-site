@@ -18,7 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNavShow = document.querySelector(".mobile-nav-show");
   const mobileNavHide = document.querySelector(".mobile-nav-hide");
   const logohide = document.querySelector(".header .logo");
+  var navOverlay = document.querySelector(".navbar");
+  var overlay = window.getComputedStyle(navOverlay, "::before");
 
+  navOverlay.addEventListener("click", () => {
+    document.querySelector("body").classList.toggle("mobile-nav-active");
+  });
   document.querySelectorAll(".mobile-nav-toggle").forEach((el) => {
     el.addEventListener("click", function (event) {
       event.preventDefault();
@@ -97,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   const whatsapp_btn = document.querySelector(".whatsapp-btn");
   whatsapp_btn.addEventListener("click", function () {
-    var phoneNumber = "0580851237";
+    var phoneNumber = "+966556634626";
     var message =
       ".اهلا بك مع شركة المهندس للعزل أرسل طلبك وسنوافيك بالرد في أقرب وقت";
 

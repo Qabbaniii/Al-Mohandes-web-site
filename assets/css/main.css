@@ -293,7 +293,7 @@ section {
 .phone-btn {
   position: fixed;
   visibility: visible;
-  left: 15px;
+  left: 20px;
   bottom: 15px;
   z-index: 99999;
   background: var(--color-primary);
@@ -325,7 +325,7 @@ section {
 .whatsapp-btn {
   position: fixed;
   visibility: visible;
-  right: 15px;
+  right: 20px;
   bottom: 15px;
   z-index: 99999;
   width: 40px;
@@ -345,7 +345,15 @@ section {
   visibility: visible;
   opacity: 1;
 }
-
+@media (min-width: 1280px) {
+  .phone-btn {
+    visibility: hidden;
+  }
+  .whatsapp-btn {
+    left: 25px;
+    bottom: 25px;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -668,8 +676,8 @@ section {
     line-height: 0;
     transition: 0.5s;
     position: fixed;
-    left: 20px;
-    top: 42px;
+    left: 30px;
+    top: 50px;
     z-index: 9999;
   }
 
@@ -2533,7 +2541,23 @@ section {
   font-weight: 700;
   text-transform: uppercase;
 }
-
+/*--------------------------------------------------------------
+# Mobile footer
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* .footer .row {  بدلتها ب dir="rtl"
+  flex-direction: row-reverse;  
+} */
 .footer .footer-content .footer-info h3 span {
   color: var(--color-primary);
 }
