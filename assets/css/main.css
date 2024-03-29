@@ -759,8 +759,9 @@ section {
 .Service-img {
   height: 140px;
   width: 140px;
-  background-color: #0a7cff;
+  /* background-color: #0a7cff; */
   border-radius: 100%;
+  /* overflow: hidden; */
 }
 .services .service-item .icon i {
   color: var(--color-secondary);
