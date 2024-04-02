@@ -51,8 +51,8 @@
     <link rel="canonical" href="https://www.example.com/" />
 
     <!-- Favicons -->
-    <link href="assets/img/blue .png" rel="icon" />
-    <link href="assets/img/blue .png" rel="apple-touch-icon" />
+    <link href="../assets/img/blue .png" rel="icon" />
+    <link href="../assets/img/blue .png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,114 +64,29 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/fontawesome-free/css/all.min.css"
+      href="../assets/vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <style>
-      /* arabic */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2)
-          format("woff2");
-        unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891,
-          U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
-          U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E,
-          U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24,
-          U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42,
-          U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54,
-          U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64,
-          U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E,
-          U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9,
-          U+1EEAB-1EEBB, U+1EEF0-1EEF1;
-      }
-      /* latin-ext */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscSCyS8p4_RHH1.woff2)
-          format("woff2");
-        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
-          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-          U+A720-A7FF;
-      }
-      /* latin */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      /* arabic */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2)
-          format("woff2");
-        unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891,
-          U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
-          U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E,
-          U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24,
-          U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42,
-          U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54,
-          U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64,
-          U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E,
-          U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9,
-          U+1EEAB-1EEBB, U+1EEF0-1EEF1;
-      }
-      /* latin-ext */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscSCyS8p4_RHH1.woff2)
-          format("woff2");
-        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
-          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-          U+A720-A7FF;
-      }
-      /* latin */
-      @font-face {
-        font-family: "Cairo";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/cairo/v28/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
+    <link href="../assets/css/main.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -182,10 +97,10 @@
       >
         <!-- nav icon -->
         <i class="mobile-nav-toggle mobile-nav-show bi"
-          ><img src="assets/img/icon/menu.png" style="height: 28px"
+          ><img src="../assets/img/icon/menu.png" style="height: 28px"
         /></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi"
-          ><img src="assets/img/icon/close.png" style="height: 22px"
+          ><img src="../assets/img/icon/close.png" style="height: 22px"
         /></i>
 
         <nav id="navbar" class="navbar">
@@ -204,318 +119,297 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <h1 class="logo_name">المهندس للعوازل</h1>
-          <img src="assets/img/white .png" alt="" />
+          <img src="../assets/img/white .png" alt="" />
         </a>
       </div>
     </header>
     <!-- End Header -->
 
-    <main id="main">
+    <main id="main" dir="rtl">
       <!-- ======= Breadcrumbs ======= -->
       <div
         class="breadcrumbs d-flex align-items-center"
-        style="background-image: url('assets/img/breadcrumbs-bg.jpg')"
+        style="background-image: url('../assets/img/breadcrumbs-bg.jpg')"
       >
         <div
           class="container position-relative d-flex flex-column align-items-center"
           data-aos="fade"
         >
-          <h2>الأخبار</h2>
-          <ol dir="rtl">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li>&nbsp;الأخبار</li>
+          <!-- <h2>تفاصيل المدونة</h2> -->
+          <ol>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../blog.html">الأخبار</a></li>
+            <li class="nota">تفاصيل المدونة</li>
           </ol>
         </div>
       </div>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Blog Section ======= -->
+      <!-- ======= Blog Details Section ======= -->
       <section id="blog" class="blog">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 posts-list">
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <article class="blog-details">
+                <div class="post-img">
                   <img
-                    src="assets/img/blog/blog-1.jpg"
-                    class="img-fluid"
+                    src="../blogs/blogs-img/3/bg.jpg"
                     alt=""
+                    class="img-fluid"
                   />
-                  <span class="post-date">December 12</span>
                 </div>
 
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                    quibusdam quia
-                  </h3>
+                <h2 class="title">
+                  كيفية اختيار أفضل شركة لعزل الخزانات: نصائح وإرشادات
+                </h2>
 
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center">
                       <i class="bi bi-person"></i>
-                      <span class="ps-2">John Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Politics</span>
-                    </div>
-                  </div>
+                      <a href="blog-details.html">&nbsp;محمد نبيل </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-details.html"
+                        ><time datetime="2024-04-02"
+                          >&nbsp;April 3, 2024</time
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End meta top -->
+
+                <div class="content">
+                  <p>
+                    في هالأيام اللي يبغى فيها الواحد يهتم بنقاء وسلامة المياه
+                    دايمًا، عزل الخزانات يكون شغل مهم للغاية. لأن جودة الخدمة
+                    والمواد اللي تُستخدم في عزل الخزانات يمكن تحسين جودة المياه
+                    اللي نستخدمها في بيوتنا. ومع وجود العديد من شركات عزل
+                    الخزانات، يصير اختيار الأفضل منها شغل ضروري عشان نضمن سلامة
+                    وجودة المياه اللي نستهلكها.
+                  </p>
+                  <h3>العوامل الرئيسية لاختيار شركة عزل الخزانات المناسبة</h3>
+                  <br />
+                  <h5>تجربة وسمعة الشركة</h5>
+                  <p>
+                    أحد الأمور الأساسية اللي لازم تنظر لها لما تختار شركة لعزل
+                    الخزانات هي تجربتها وسمعتها. من الأفضل اختيار شركة عندها
+                    تجربة مثبتة في مجال عزل الخزانات ومعروفة بسمعة طيبة عند
+                    الزبائن السابقين.
+                  </p>
+                  <h5>المواد المستخدمة</h5>
 
                   <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas.
-                    Quibusdam animi praesentium. Aliquam et laboriosam eius aut
-                    nostrum quidem aliquid dicta.
+                    لزوم نتأكد إن الشركة تستخدم مواد عالية الجودة وموافقة من
+                    الجهات الرسمية. استخدام مواد ذات جودة عالية يضمن فعالية
+                    العزل وطول عمر الخزان.
                   </p>
 
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">March 19</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Nisi magni odit consequatur autem nulla dolorem
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Julia Parker</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Economics</span>
-                    </div>
-                  </div>
-
+                  <h5>السعر والتكلفة</h5>
                   <p>
-                    Incidunt voluptate sit temporibus aperiam. Quia vitae aut
-                    sint ullam quis illum voluptatum et. Quo libero rerum
-                    voluptatem pariatur nam.
+                    على الرغم من أهمية السعر، لازم ما نعتمد على الأمور المالية
+                    فقط عند اختيار شركة لعزل الخزانات. لازم نأخذ بعين الاعتبار
+                    الجودة والمواد المستخدمة جنبًا إلى جنب مع التكلفة.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">June 24</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Possimus soluta ut id suscipit ea ut. In quo quia et soluta
-                    libero sit sint.
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Maria Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Sports</span>
-                    </div>
-                  </div>
-
+                  <h5>الضمانات وخدمة ما بعد البيع</h5>
                   <p>
-                    Aut iste neque ut illum qui perspiciatis similique
-                    recusandae non. Fugit autem dolorem labore omnis et. Eum
-                    temporibus fugiat voluptate enim tenetur sunt omnis.
+                    الضمانات وخدمة ما بعد البيع شيء مهم في اختيار الشركة
+                    المناسبة. لازم نتأكد من وجود ضمانات كافية تغطي عملية العزل
+                    وكمان الخدمة المستمرة بعد الانتهاء من العمل.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">August 05</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Non rem rerum nam cum quo minus. Dolor distinctio deleniti
-                    explicabo eius exercitationem.
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Maria Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Sports</span>
-                    </div>
-                  </div>
-
+                  <h5>التقييمات والمراجعات</h5>
                   <p>
-                    Aspernatur rerum perferendis et sint. Voluptates cupiditate
-                    voluptas atque quae. Rem veritatis rerum enim et autem.
-                    Saepe atque cum eligendi eaque iste omnis a qui.
+                    لزوم قراءة التقييمات والمراجعات عن الشركة اللي ناوين نتعاقد
+                    معها. التقييمات بتعكس آراء الزبائن السابقين وبتعطي فكرة عن
+                    جودة الخدمة اللي تقدمها الشركة.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-5.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">September 17</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Accusamus quaerat aliquam qui debitis facilis consequatur
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">John Parker</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Politics</span>
-                    </div>
-                  </div>
-
+                  <h5>اتباع الإرشادات الأمنية</h5>
                   <p>
-                    In itaque assumenda aliquam voluptatem qui temporibus iusto
-                    nisi quia. Autem vitae quas aperiam nesciunt mollitia
-                    tempora odio omnis. Ipsa odit sit ut amet necessitatibus.
-                    Quo ullam ut corrupti autem consequuntur totam dolorem.
+                    لازم للشركة اللي تعزل الخزانات تلتزم باتباع الإرشادات
+                    الأمنية المعتمدة عشان نضمن سلامة العملاء والعاملين والحفاظ
+                    على البيئة.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-6.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">December 07</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Distinctio provident quibusdam numquam aperiam aut
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Julia White</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Economics</span>
-                    </div>
-                  </div>
-
+                  <h5>الميزانية المناسبة</h5>
                   <p>
-                    Expedita et temporibus eligendi enim molestiae est
-                    architecto praesentium dolores. Illo laboriosam officiis
-                    quis. Labore officia quia sit voluptatem nisi est
-                    dignissimos totam. Et voluptate et consectetur voluptatem id
-                    dolor magni impedit. Omnis dolores sit.
+                    لزوم نحدد ميزانية مناسبة لعملية عزل الخزانات تناسب
+                    الاحتياجات والمتطلبات. يمكن التفاوض مع الشركة المختارة
+                    للحصول على عرض يتناسب مع الميزانية المحددة.
                   </p>
+                  <br />
+                  <h5>اختيار أفضل شركة لعزل الخزانات:(خطوات عملية)</h5>
+                  <p>
+                    - البحث عن شركات عزل الخزانات المحلية. <br />
+                    - قراءة التقييمات والتوصيات عبر الإنترنت. <br />
+                    - طلب عروض أسعار مفصلة من الشركات المختارة. <br />
+                    - التواصل المباشر مع الشركات لطرح الاستفسارات والمتطلبات.
+                    <br />
+                    - اختيار الشركة التي تلبي الاحتياجات والمتطلبات بشكل أفضل.
+                  </p>
+                  <br />
+                  <div class="post-img" style="text-align: center">
+                    <img
+                      src="../blogs/blogs-img/2/شركة-عزل-خزانات.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <br />
+                  <blockquote>
+                    <h4>أسئلة شائعة ومهمة</h4>
+                    <br />
+                    <h6>ما هي الضمانات المتوفرة بعد عملية العزل؟</h6>
+                    <p>
+                      - تتضمن الضمانات المتوفرة بعد عملية العزل تغطية أي مشاكل
+                      تنشأ بسبب عيوب في عملية العزل. <br />
+                      - يجب التأكد من أن الضمانات تغطي جميع العيوب المحتملة
+                      وتوفر خدمة ما بعد البيع لتقديم الصيانة اللازمة.
+                    </p>
+                    <h6>س:ما هو متوسط ​​تكلفة عزل الخزانات؟</h6>
+                    <p>
+                      - يختلف متوسط ​​تكلفة عزل الخزانات اعتمادًا على عدة عوامل،
+                      بما في ذلك حجم الخزان ونوع المواد المستخدمة ومستوى التخصيص
+                      المطلوب.<br />
+                      - يمكن للشركات تقديم تقديرات مجانية لعملية العزل بناءً على
+                      المعلومات المقدمة والمواصفات المطلوبة.
+                    </p>
 
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
+                    <h6>س: المعايير المطلوبة للشركات في عملية العزل؟</h6>
+                    <p>
+                      - يجب على الشركات الالتزام بالمعايير والتوجيهات المحددة من
+                      قبل الجهات الرسمية المعنية بصناعة البناء والتشييد.<br />
+                      - يضمن الالتزام بالمعايير السلامة والجودة في عملية العزل
+                      وتقديم خدمة موثوقة وفعالة.
+                    </p>
+                  </blockquote>
                 </div>
-              </div>
+                <!-- End post content -->
+              </article>
+              <!-- End blog post -->
             </div>
-            <!-- End post list item -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <div class="sidebar-item recent-posts">
+                  <h3 class="sidebar-title">Recent Posts</h3>
+
+                  <div class="mt-3">
+                    <div class="post-item mt-3">
+                      <img src="../assets/img/blog/blog-recent-1.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Nihil blanditiis at in nihil autem</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-2.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Quidem autem et impedit</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-3.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Id quia et et ut maxime similique occaecati ut</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-4.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Laborum corporis quo dara net para</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-5.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Et dolores corrupti quae illo quod dolor</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-2.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Quidem autem et impedit</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-3.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Id quia et et ut maxime similique occaecati ut</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-4.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Laborum corporis quo dara net para</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+                  </div>
+                </div>
+                <!-- End sidebar recent posts-->
+
+                <!-- End sidebar tags-->
+              </div>
+              <!-- End Blog Sidebar -->
+            </div>
           </div>
-          <!-- End blog posts list -->
-
-          <div class="blog-pagination">
-            <ul class="justify-content-center">
-              <li><a href="#">1</a></li>
-              <li class="active"><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-          </div>
-          <!-- End blog pagination -->
         </div>
       </section>
-      <!-- End Blog Section -->
+      <!-- End Blog Details Section -->
     </main>
     <!-- End #main -->
     <!-- ======= Footer ======= -->
@@ -632,27 +526,27 @@
     <a
       href=""
       class="whatsapp-btn d-flex align-items-center justify-content-center"
-      ><i class="bi"><img src="assets/img/whatsapp.png" /></i
+      ><i class="bi"><img src="../assets/img/whatsapp.png" /></i
     ></a>
     <a
       href="tel:0580851237"
       class="phone-btn d-flex align-items-center justify-content-center"
       ><i class="bi"
-        ><img src="assets/img/icon/phone-call.png" style="height: 25px" /></i
+        ><img src="../assets/img/icon/phone-call.png" style="height: 25px" /></i
     ></a>
 
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

@@ -51,8 +51,8 @@
     <link rel="canonical" href="https://www.example.com/" />
 
     <!-- Favicons -->
-    <link href="assets/img/blue .png" rel="icon" />
-    <link href="assets/img/blue .png" rel="apple-touch-icon" />
+    <link href="../assets/img/blue .png" rel="icon" />
+    <link href="../assets/img/blue .png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,26 +64,29 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/fontawesome-free/css/all.min.css"
+      href="../assets/vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
     <style>
       /* arabic */
       @font-face {
@@ -182,10 +185,10 @@
       >
         <!-- nav icon -->
         <i class="mobile-nav-toggle mobile-nav-show bi"
-          ><img src="assets/img/icon/menu.png" style="height: 28px"
+          ><img src="../assets/img/icon/menu.png" style="height: 28px"
         /></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi"
-          ><img src="assets/img/icon/close.png" style="height: 22px"
+          ><img src="../assets/img/icon/close.png" style="height: 22px"
         /></i>
 
         <nav id="navbar" class="navbar">
@@ -204,318 +207,332 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <h1 class="logo_name">المهندس للعوازل</h1>
-          <img src="assets/img/white .png" alt="" />
+          <img src="../assets/img/white .png" alt="" />
         </a>
       </div>
     </header>
     <!-- End Header -->
 
-    <main id="main">
+    <main id="main" dir="rtl">
       <!-- ======= Breadcrumbs ======= -->
       <div
         class="breadcrumbs d-flex align-items-center"
-        style="background-image: url('assets/img/breadcrumbs-bg.jpg')"
+        style="background-image: url('../assets/img/breadcrumbs-bg.jpg')"
       >
         <div
           class="container position-relative d-flex flex-column align-items-center"
           data-aos="fade"
         >
-          <h2>الأخبار</h2>
-          <ol dir="rtl">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li>&nbsp;الأخبار</li>
+          <!-- <h2>تفاصيل المدونة</h2> -->
+          <ol>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../blog.html">الأخبار</a></li>
+            <li class="nota">تفاصيل المدونة</li>
           </ol>
         </div>
       </div>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Blog Section ======= -->
+      <!-- ======= Blog Details Section ======= -->
       <section id="blog" class="blog">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 posts-list">
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <article class="blog-details">
+                <div class="post-img">
                   <img
-                    src="assets/img/blog/blog-1.jpg"
-                    class="img-fluid"
+                    src="../blogs/blogs-img/1/images.jpg"
                     alt=""
+                    class="img-fluid"
                   />
-                  <span class="post-date">December 12</span>
                 </div>
 
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                    quibusdam quia
-                  </h3>
+                <h2 class="title">
+                  ٧ أسباب تجعل عزل الأسطح ضروري في بيوتكم - لا تستهينوا بالحماية
+                </h2>
 
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center">
                       <i class="bi bi-person"></i>
-                      <span class="ps-2">John Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Politics</span>
-                    </div>
-                  </div>
+                      <a href="blog-details.html">&nbsp;آية محمد</a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-details.html"
+                        ><time datetime="2024-04-02"
+                          >&nbsp;April 2, 2024</time
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- End meta top -->
+
+                <div class="content">
+                  <p>
+                    عزل الأسطح هو إجراء مهم يتخذه الكثيرون في منازلهم لحمايتها
+                    وضمان الراحة والرفاهية لأفراد العائلة. لكن الكثير قد يكونون
+                    غير مدركين لأهمية هذا الإجراء والفوائد العديدة التي يتحقق
+                    بها. لذا، في هذا المقال، سنستعرض أسباب جعل عزل الأسطح
+                    ضرورياً في بيوتكم.
+                  </p>
+                  <h3>１. حماية من التسريبات والتسربات.</h3>
 
                   <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas.
-                    Quibusdam animi praesentium. Aliquam et laboriosam eius aut
-                    nostrum quidem aliquid dicta.
+                    عزل الأسطح بشكل جيد له أهمية كبيرة في حماية المنزل من
+                    التسربات والتسريبات. عندما تكون الأسطح غير معزولة بشكل جيد،
+                    يمكن للمياه أن تتسرب إلى داخل المنزل خلال الأمطار الغزيرة أو
+                    ذوبان الثلوج، مما يؤدي إلى تلف هياكل المنزل وتشكيل خطر على
+                    سلامة السكان. يتسبب التسرب المياهي في تدهور الجدران والسقف
+                    والأساسات، وقد يؤدي إلى ظهور بقع رطبة داخل المنزل وتلف
+                    الأثاث والأرضيات. بالإضافة إلى ذلك، يمكن للتسربات المياهية
+                    أن تسبب نمو العفن والفطريات داخل المنزل، مما يؤثر على جودة
+                    الهواء وصحة سكان المنزل. من هنا، يظهر أهمية عزل الأسطح بشكل
+                    جيد كوسيلة فعالة للحفاظ على سلامة المنزل وصحة سكانه.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">March 19</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Nisi magni odit consequatur autem nulla dolorem
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Julia Parker</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Economics</span>
-                    </div>
-                  </div>
+                  <h3>２. توفير الطاقة وتخفيض فواتير الكهرباء.</h3>
 
                   <p>
-                    Incidunt voluptate sit temporibus aperiam. Quia vitae aut
-                    sint ullam quis illum voluptatum et. Quo libero rerum
-                    voluptatem pariatur nam.
+                    استثماراً مهماً لتوفير الطاقة وتقليل فواتير الكهرباء. عندما
+                    يكون الأسطح غير معزولة بشكل جيد، يمكن للحرارة أو البرودة أن
+                    تتسرب بسهولة إلى داخل المنزل، مما يجعل أنظمة التدفئة
+                    والتبريد تعمل بشكل أكثر استهلاكاً للطاقة للحفاظ على درجة
+                    الحرارة المرغوبة. بالإضافة إلى ذلك، يمكن للتسربات الهوائية
+                    أن تزيد من استهلاك الطاقة بشكل كبير، حيث يتطلب تكييف الهواء
+                    الإضافي لتعويض الفقدانات الحرارية أو التبريد الزائد. من هنا،
+                    يؤدي عزل الأسطح بشكل جيد إلى تقليل استهلاك الطاقة وبالتالي
+                    تخفيض فواتير الكهرباء، مما يوفر المال على المدى الطويل
+                    ويساهم في الحفاظ على البيئة.
                   </p>
 
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">June 24</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Possimus soluta ut id suscipit ea ut. In quo quia et soluta
-                    libero sit sint.
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Maria Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Sports</span>
-                    </div>
-                  </div>
-
+                  <h3>３. زيادة قيمة العقار</h3>
                   <p>
-                    Aut iste neque ut illum qui perspiciatis similique
-                    recusandae non. Fugit autem dolorem labore omnis et. Eum
-                    temporibus fugiat voluptate enim tenetur sunt omnis.
+                    تأثير إيجابي على قيمة العقار، حيث يُعتبر مؤشراً على جودة
+                    وصحة المنزل. المنازل التي تمتلك نظام عزل فعال غالبًا ما تكون
+                    أكثر جاذبية للمشترين المحتملين، مما يمكن أن يؤدي إلى زيادة
+                    في قيمة العقار. بالإضافة إلى ذلك، يمكن أن يؤدي الحفاظ على
+                    حالة الأسطح والتأكد من عزلها بشكل جيد إلى تقليل التكاليف
+                    اللاحقة للصيانة والإصلاحات، مما يعزز جاذبية المنزل للمشترين
+                    ويزيد من قيمته في السوق العقارية.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">August 05</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Non rem rerum nam cum quo minus. Dolor distinctio deleniti
-                    explicabo eius exercitationem.
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Maria Doe</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Sports</span>
-                    </div>
-                  </div>
-
+                  <h3>４. حماية صحة السكان</h3>
                   <p>
-                    Aspernatur rerum perferendis et sint. Voluptates cupiditate
-                    voluptas atque quae. Rem veritatis rerum enim et autem.
-                    Saepe atque cum eligendi eaque iste omnis a qui.
+                    تأثير إيجابي على قيمة العقار، حيث يُعتبر مؤشراً على جودة
+                    وصحة المنزل. المنازل التي تمتلك نظام عزل فعال غالبًا ما تكون
+                    أكثر جاذبية للمشترين المحتملين، مما يمكن أن يؤدي إلى زيادة
+                    في قيمة العقار. بالإضافة إلى ذلك، يمكن أن يؤدي الحفاظ على
+                    حالة الأسطح والتأكد من عزلها بشكل جيد إلى تقليل التكاليف
+                    اللاحقة للصيانة والإصلاحات، مما يعزز جاذبية المنزل للمشترين
+                    ويزيد من قيمته في السوق العقارية.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-5.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">September 17</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Accusamus quaerat aliquam qui debitis facilis consequatur
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">John Parker</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Politics</span>
-                    </div>
-                  </div>
-
+                  <h3>５. الحفاظ على البيئة</h3>
                   <p>
-                    In itaque assumenda aliquam voluptatem qui temporibus iusto
-                    nisi quia. Autem vitae quas aperiam nesciunt mollitia
-                    tempora odio omnis. Ipsa odit sit ut amet necessitatibus.
-                    Quo ullam ut corrupti autem consequuntur totam dolorem.
+                    باعتبارها خطوة نحو التنمية المستدامة، يمكن أن يساهم عزل
+                    الأسطح بشكل جيد في الحفاظ على البيئة. بتقليل استهلاك الطاقة
+                    في المنازل، يمكن أن يقلل عزل الأسطح من انبعاثات غازات
+                    الدفيئة والتأثير البيئي السلبي. كما يمكن أن يسهم العزل الجيد
+                    في تقليل استهلاك الموارد الطبيعية مثل الوقود والكهرباء،
+                    وبالتالي تقليل الضغط على الموارد الطبيعية والحفاظ عليها
+                    للأجيال القادمة. من خلال تبني ممارسات بناء أكثر فعالية من
+                    حيث استخدام الطاقة، يمكن أن يسهم العزل الجيد في تحسين جودة
+                    البيئة والمساهمة في مكافحة تغير المناخ.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-6.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">December 07</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Distinctio provident quibusdam numquam aperiam aut
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Julia White</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Economics</span>
-                    </div>
-                  </div>
-
+                  <h3>６. تحسين الراحة الصوتية</h3>
                   <p>
-                    Expedita et temporibus eligendi enim molestiae est
-                    architecto praesentium dolores. Illo laboriosam officiis
-                    quis. Labore officia quia sit voluptatem nisi est
-                    dignissimos totam. Et voluptate et consectetur voluptatem id
-                    dolor magni impedit. Omnis dolores sit.
+                    عزل الأسطح بشكل جيد له تأثير إيجابي على الراحة الصوتية داخل
+                    المنزل. يمكن للأسطح غير المعزولة بشكل جيد أن تسمح بدخول
+                    الضوضاء الخارجية مثل صوت المرور والطائرات والأصوات القريبة
+                    الأخرى بشكل مزعج. بالعزل الجيد، يمكن تقليل انتقال الصوت بين
+                    الأماكن المختلفة داخل المنزل، مما يخلق بيئة هادئة ومريحة
+                    للسكان. تحسين الراحة الصوتية يمكن أن يؤدي إلى تعزيز
+                    الاسترخاء والهدوء داخل المنزل، مما يساهم في تحسين جودة
+                    الحياة اليومية لسكانه.
                   </p>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
+                  <h3>７. الحماية من التقلبات الجوية الشديدة</h3>
+                  <p>
+                    عزل الأسطح واحدًا من الخطوات الأساسية لحماية المنزل من
+                    التقلبات الجوية الشديدة. في بعض المناطق، يتعرض المنزل لظروف
+                    جوية قاسية مثل العواصف الرعدية، والأمطار الغزيرة، والثلوج
+                    الكثيفة. عندما تكون الأسطح معزولة بشكل جيد، يمكنها تحمل
+                    التقلبات الجوية بشكل أفضل، مما يقلل من خطر حدوث تلف في
+                    الهيكل الخارجي للمنزل أو تسرب المياه إلى داخله. يساهم العزل
+                    الجيد في زيادة متانة ومقاومة المنزل للعوامل الجوية القاسية،
+                    وبالتالي يحمي السكان والممتلكات من الأضرار الناتجة عن الظروف
+                    الجوية السيئة.
+                  </p>
+                  <br />
+                  <div class="post-img">
+                    <img
+                      src="../blogs/blogs-img/1/breadcrumbs-bg.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <br />
+                  <blockquote>
+                    <h4>٥ أسئلة شائعة ومهمة</h4>
+                    <br />
+                    <h6>١. هل يُمكنني عزل سطح منزلي بنفسي؟</h6>
+                    <p>
+                      نعم، يُمكنك عزل سطح منزلك بنفسك باستخدام المواد العازلة
+                      المناسبة واتباع التعليمات بدقة، ولكن من الأفضل التعاقد مع
+                      محترفين لضمان التركيب السليم.
+                    </p>
+                    <h6>٢. كم تُكلف عملية عزل الأسطح؟</h6>
+                    <p>
+                      تختلف تكلفة عملية عزل الأسطح بناءً على عدة عوامل مثل حجم
+                      المنزل ونوع المواد المستخدمة، ولكن يُمكن أن تتراوح التكلفة
+                      بين مئات إلى آلاف الريالات ويمكن ان تتواصل معنا لتقدير
+                      التكلفة.
+                    </p>
+                    <h6>٣. هل يُمكن لعزل الأسطح أن يُقلل من الضوضاء؟</h6>
+                    <p>
+                      نعم، يُمكن لعزل الأسطح بشكل جيد أن يُقلل من انتقال الضوضاء
+                      إلى داخل المنزل، مما يُخلق بيئة هادئة ومريحة للسكان.
+                    </p>
+                    <h6>٤. كم يستغرق من الوقت لعملية عزل الأسطح؟</h6>
+                    <p>
+                      يعتمد ذلك على حجم المنزل وتعقيد العملية، ولكن بشكل عام
+                      يُمكن أن تستغرق عملية عزل الأسطح بضعة أيام حتى عدة أسابيع.
+                    </p>
+                    <h6>
+                      ٥. هل يُمكنني الحصول على تخفيضات ضريبية لعملية عزل الأسطح؟
+                    </h6>
+                    <p>
+                      في بعض الحالات، يُمكن الحصول على تخفيضات ضريبية لعملية عزل
+                      الأسطح، خاصة إذا كانت تلك العملية تهدف إلى تحسين كفاءة
+                      الطاقة في المنزل. يجب استشارة محاسب أو متخصص في الضرائب
+                      للحصول على مزيد من المعلومات.
+                    </p>
+                  </blockquote>
                 </div>
-              </div>
+                <!-- End post content -->
+              </article>
+              <!-- End blog post -->
             </div>
-            <!-- End post list item -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <div class="sidebar-item recent-posts">
+                  <h3 class="sidebar-title">Recent Posts</h3>
+
+                  <div class="mt-3">
+                    <div class="post-item mt-3">
+                      <img src="../assets/img/blog/blog-recent-1.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Nihil blanditiis at in nihil autem</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-2.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Quidem autem et impedit</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-3.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Id quia et et ut maxime similique occaecati ut</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-4.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Laborum corporis quo dara net para</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-5.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Et dolores corrupti quae illo quod dolor</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-2.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Quidem autem et impedit</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-3.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Id quia et et ut maxime similique occaecati ut</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+
+                    <div class="post-item">
+                      <img src="../assets/img/blog/blog-recent-4.jpg" alt="" />
+                      <div>
+                        <h4>
+                          <a href="blog-details.html"
+                            >Laborum corporis quo dara net para</a
+                          >
+                        </h4>
+                        <time datetime="2020-01-01">Jan 1, 2020</time>
+                      </div>
+                    </div>
+                    <!-- End recent post item-->
+                  </div>
+                </div>
+                <!-- End sidebar recent posts-->
+
+                <!-- End sidebar tags-->
+              </div>
+              <!-- End Blog Sidebar -->
+            </div>
           </div>
-          <!-- End blog posts list -->
-
-          <div class="blog-pagination">
-            <ul class="justify-content-center">
-              <li><a href="#">1</a></li>
-              <li class="active"><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-          </div>
-          <!-- End blog pagination -->
         </div>
       </section>
-      <!-- End Blog Section -->
+      <!-- End Blog Details Section -->
     </main>
     <!-- End #main -->
     <!-- ======= Footer ======= -->
@@ -632,27 +649,27 @@
     <a
       href=""
       class="whatsapp-btn d-flex align-items-center justify-content-center"
-      ><i class="bi"><img src="assets/img/whatsapp.png" /></i
+      ><i class="bi"><img src="../assets/img/whatsapp.png" /></i
     ></a>
     <a
       href="tel:0580851237"
       class="phone-btn d-flex align-items-center justify-content-center"
       ><i class="bi"
-        ><img src="assets/img/icon/phone-call.png" style="height: 25px" /></i
+        ><img src="../assets/img/icon/phone-call.png" style="height: 25px" /></i
     ></a>
 
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

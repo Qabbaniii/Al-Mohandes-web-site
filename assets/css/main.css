@@ -197,7 +197,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 140px 0 60px 0;
+  padding: 100px 0 30px 0;
   min-height: 30vh;
   position: relative;
   background-size: cover;
@@ -223,9 +223,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 0 10px 0;
+  /* padding: 0 0 10px 0; */
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -239,14 +239,15 @@ section {
   text-decoration: underline;
 }
 
-.breadcrumbs ol li + li {
+/* .breadcrumbs ol li + li {
   padding-left: 10px;
-}
+} */
 
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #fff;
+  padding-left: 5px;
+  color: #eee7e7;
   content: "/";
 }
 
@@ -2076,7 +2077,7 @@ section {
 # Blog Details
 --------------------------------------------------------------*/
 .blog .blog-details {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   padding: 30px;
 }
 
@@ -2102,13 +2103,19 @@ section {
   margin-top: 30px;
   font-weight: bold;
 }
+.content h4 {
+  color: red;
+}
+.content h6 {
+  color: chocolate;
+}
 
 .blog .blog-details .content blockquote {
   overflow: hidden;
   background-color: rgba(82, 86, 94, 0.06);
   padding: 60px;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   margin: 20px 0;
 }
 
@@ -2116,15 +2123,15 @@ section {
   color: var(--color-default);
   line-height: 1.6;
   margin-bottom: 0;
-  font-style: italic;
+  margin-bottom: 10px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 14px;
 }
 
 .blog .blog-details .content blockquote:after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   width: 3px;
@@ -2362,6 +2369,7 @@ section {
 .blog .sidebar .recent-posts h4 {
   font-size: 15px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .blog .sidebar .recent-posts h4 a {
@@ -2378,6 +2386,7 @@ section {
   font-style: italic;
   font-size: 14px;
   color: rgba(54, 77, 89, 0.4);
+  margin-right: 10px;
 }
 
 .blog .sidebar .tags {
@@ -2535,7 +2544,7 @@ section {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 50px 0 15px 0;
   position: relative;
 }
 
@@ -2547,18 +2556,18 @@ section {
 }
 
 .footer .footer-content .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer .footer-content .footer-info h3 {
   font-size: 28px;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
 }
-/*--------------------------------------------------------------
+/*------------------------------------------------------------
 # Mobile footer
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
