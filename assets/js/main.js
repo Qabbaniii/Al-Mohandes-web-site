@@ -98,21 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
 */
 
   /**
-   * whats button
-   */
-  const whatsapp_btn = document.querySelector(".whatsapp-btn");
-  whatsapp_btn.addEventListener("click", function () {
-    var phoneNumber = "+966556634626";
-    var message =
-      ".اهلا بك مع شركة المهندس للعزل أرسل طلبك وسنوافيك بالرد في أقرب وقت";
-
-    var whatsappUrl =
-      "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-
-    window.open(whatsappUrl, "_blank");
-  });
-
-  /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({

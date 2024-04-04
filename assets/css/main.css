@@ -758,8 +758,8 @@ section {
   margin-bottom: 50px;
 }
 .Service-img {
-  height: 140px;
-  width: 140px;
+  height: 130px;
+  width: 130px;
   /* background-color: #0a7cff; */
   border-radius: 100%;
   /* overflow: hidden; */
@@ -2103,10 +2103,10 @@ section {
   margin-top: 30px;
   font-weight: bold;
 }
-.content h4 {
+.content blockquote h4 {
   color: red;
 }
-.content h6 {
+.content blockquote h6 {
   color: chocolate;
 }
 
