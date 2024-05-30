@@ -14,4 +14,3 @@ RewriteRule ^contact?$ contact.html
 RewriteRule ^projects?$ projects.html
 RewriteRule ^certificate?$ certificate.html
 RewriteRule ^AC?$ AC.html
-RewriteRule ^tasarobat?$ tasarobat.html
